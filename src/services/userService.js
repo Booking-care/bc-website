@@ -7,6 +7,14 @@ const userService = {
       password: password,
     });
   },
+
+  getAllUsers(id) {
+    return axios.get(`/api/get-all-users`, {
+      params: {
+        id: id,
+      },
+    });
+  },
 };
 
 export default userService;
